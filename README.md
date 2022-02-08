@@ -1,2 +1,3 @@
 # Mydia-Eventos
-Site Desenvolvido para o meu projeto de finalização de curso no Serviço Nacional de Aprendizagem Industrial contendo Básico e algumas implementações com Java Script contendo biblioteca Jquery.
+
+Projeto Finalização de curso Serviço Nacional de Aprendizagem Industrial no qual utilizei diversas ferramentas para implementações, utilizando html básico com css básico e avançado e juntamente eventos em java Script com a biblioteca Jquery.
