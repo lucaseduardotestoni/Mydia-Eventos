@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Mydia Eventos</title>
+    <link rel="stylesheet" href="Nav_Responsivo.css" type="text/css">
+    <link href="Style.css" rel="stylesheet" type="text/css" />
+    <link href="Slider.css" rel="stylesheet" type="text/css" />
+    <link id="favicon" rel="icon" href="FaviconD.ico" type="icon">
+</head>
+
+<body>
+    <!--Início Header-->
+    <header>
+        <!--Logo Mydia Eventos-->
+        <div id="logo">
+            <a href="index.html">
+                <img src="Imagens/Logo.png" alt="" />
+            </a>
+        </div>
+        <!--Definição para configurar o Menu responsivo-->
+        <div class="nav-trigger js_navbar">
+            <span></span><span></span><span></span>
+        </div>
+        <!--Chamada dos menus de acordo com arquivos para Celular-->
+        <div class="nav-menu">
+            <ul>
+                <a href="index.html">
+                    <li>
+                        <h2 class="mt">ínicio</h2><i></i>
+                    </li>
+                </a>
+                <a href="Sobre.html">
+                    <li>
+                        <h2 class="mb">Sobre</h2><i></i>
+                    </li>
+                </a>
+                <a href="Servicos.html">
+                    <li>
+                        <h2 class="mt">Eventos</h2><i></i>
+                    </li>
+                </a>
+                <a href="Contato.html">
+                    <li>
+                        <h2 class="mb">Contato</h2><i></i>
+                    </li>
+                </a>
+            </ul>
+        </div>
+        <!--Chamada do Script Menu Responsivo-->
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+        <script src="./script.js"></script>
+        <!--Definição Menu para Computador-->
+        <nav class="Menu">
+            <a href="index.html">Início</a>
+            <a href="Sobre.html">Sobre</a>
+            <a href="Servicos.html">Eventos</a>
+            <a href="Contato.html">Contato</a>
+        </nav>
+    </header>
+    <!-- Definição Item para Evento Slider-->
+    <ul class="slider">
+        <li><span>Image 01</span></li>
+        <li><span>Image 02</span></li>
+        <li><span>Image 03</span></li>
+    </ul>
+    <!--bloco Para Separação Slider para Informação adicional-->
+    <div id="containerBanner">
+
+        <section id="sobreContainer">
+            <div id="Sobre">
+                <h1>Sobre</h1>
+                <p>
+                    A Mydia Eventos trabalha no ramo de eventos corporativos, sociais como casamentos,<br>
+                    formaturas, debutantes, entregando a estrutura de som e iluminação com a maior<br>
+                    qualidade de materiais e serviço que seu cliente merece.<br>
+                    Trabalha com pacotes diferenciados, podendo destacar o pacote DJ Show,<br>
+                    onde diversas atrações acontecem ao longo do evento, animando todos os convidados,<br>
+                    tornando cada momento único, afinal, ela trabalha com o sonho de seus clientes,<br>
+                    e nada mais justo que fazer desse momento o mais especial possível.<br>
+                    Dando a importância a cada detalhe do seu evento, pode deixara parte técnica com a gente!<br>
+                </p>
+            </div>
+            <div id="imgsobre">
+                <img src="Imagens/Djshow.png" alt="" />
+            </div>
+        </section>
+    </div>
+    <!--Inserção de dados no Footer-->
+    <footer>
+        <!--Itens de contato-->
+        <div id="email">
+
+            <p>djtestoni@hotmail.com</p>
+        </div>
+        <!--Definição de icones com hyperlink-->
+        <div class="Icones">
+            <a href="https://www.facebook.com/MydiaEventos/" target="blank">
+                <img src="Imagens/Facebook.png" alt="Facebook" />
+            </a>
+            <a href="https://www.instagram.com/mydiaaudiovisuais/" target="blank">
+                <img src="Imagens/Instagram.png" alt="Instagram" />
+            </a>
+            <a href="https://api.whatsapp.com/send?phone=554799113574" target="blank">
+                <img src="Imagens/whatsapp.png" alt="Whatsapp" />
+            </a>
+        </div>
+    </footer>
+</body>
+<!--Importando Biblioteca Jquery-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js">
+</script>
+
+</html>
