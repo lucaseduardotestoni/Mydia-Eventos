@@ -1,0 +1,154 @@
+/*Definição de tamanho do bloco do slide show*/
+.slider,
+.slider:after {
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+    position: fixed;
+}
+
+/*Configuração da li tamanho para efeitos no slide-show*/
+.slider li span {
+    width: 100%;
+    height: 500px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    color: transparent;
+    background-size: cover;
+    background-position: 50% 50%;;
+    opacity: 0;
+    z-index: -1;
+	-webkit-backface-visibility: hidden;
+    -webkit-animation: imageAnimation 20s linear infinite 0s;
+    -moz-animation: imageAnimation 20s linear infinite 0s;
+    -o-animation: imageAnimation 20s linear infinite 0s;
+    -ms-animation: imageAnimation 20s linear infinite 0s;
+    animation: imageAnimation 20s linear infinite 0s;
+}
+/*Delay navegadores + imagem de fundo*/
+.slider li:nth-child(1) span { background-image: url(Imagens/Sl1.png) }
+.slider li:nth-child(2) span {
+    background-image: url(Imagens/Sl2.png);
+    -webkit-animation-delay: 7s;
+    -moz-animation-delay: 7s;
+    -o-animation-delay: 7s;
+    -ms-animation-delay: 7s;
+    animation-delay: 7s;
+}
+.slider li:nth-child(3) span {
+    background-image: url(Imagens/Sl3.png);
+    -webkit-animation-delay: 15s;
+    -moz-animation-delay: 15s;
+    -o-animation-delay: 1s;
+    -ms-animation-delay: 15s;
+    animation-delay: 15s;
+}
+/* Animação nas imagens de entrada e saída*/
+@-webkit-keyframes imageAnimation { 
+	5% {
+	    opacity: 0;
+	    -webkit-animation-timing-function: ease-in;
+	}
+	15% {
+	    opacity: 1;
+	    -webkit-transform: scale(1.05);
+	    -webkit-animation-timing-function: ease-out;
+	}
+	40% {
+	    opacity: 1;
+	    -webkit-transform: scale(1.1);
+	}
+	50% {
+	    opacity: 0;
+	    -webkit-transform: scale(1.1);
+	}
+	100% { opacity: 0 }
+}
+@-moz-keyframes imageAnimation { 
+	5% {
+	    opacity: 0;
+	    -moz-animation-timing-function: ease-in;
+	}
+	15% {
+	    opacity: 1;
+	    -moz-transform: scale(1.05);
+	    -moz-animation-timing-function: ease-out;
+	}
+	40% {
+	    opacity: 1;
+	    -moz-transform: scale(1.1);
+	}
+	50% {
+	    opacity: 0;
+	    -moz-transform: scale(1.1);
+	}
+	100% { opacity: 0 }
+}
+@-o-keyframes imageAnimation { 
+	5% {
+	    opacity: 0;
+	    -o-animation-timing-function: ease-in;
+	}
+	15% {
+	    opacity: 1;
+	    -o-transform: scale(1.5);
+	    -o-animation-timing-function: ease-out;
+	}
+	40% {
+	    opacity: 1;
+	    -o-transform: scale(1.1);
+	}
+	50% {
+	    opacity: 0;
+	    -o-transform: scale(1.1);
+	}
+	100% { opacity: 0 }
+}
+@-ms-keyframes imageAnimation { 
+	5% {
+	    opacity: 0;
+	    -ms-animation-timing-function: ease-in;
+	}
+	15% {
+	    opacity: 1;
+	    -ms-transform: scale(1.05);
+	    -ms-animation-timing-function: ease-out;
+	}
+	40% {
+	    opacity: 1;
+	    -ms-transform: scale(1.1);
+	}
+	50% {
+	    opacity: 0;
+	    -ms-transform: scale(1.1);
+	}
+	100% { opacity: 0 }
+}
+@keyframes imageAnimation { 
+	5% {
+	    opacity: 0;
+	    animation-timing-function: ease-in;
+	}
+	20% {
+	    opacity: 1;
+	    transform: scale(1.05);
+	    animation-timing-function: ease-out;
+	}
+	40% {
+	    opacity: 1;
+	    transform: scale(1.01);
+	}
+	60% {
+	    opacity: 0;
+	    transform: scale(1.01);
+	}
+	100% { opacity: 0 }
+}
+
+.no-cssanimations .cb-slideshow li span{
+	opacity:1;
+}
+ 
